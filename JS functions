@@ -1,0 +1,30 @@
+1. Remove duplicate elements in arr
+const uniqueArr = (arr) => [...new Set(arr)];
+
+2. Calculate arr average
+const meanArr = (arr) => arr.reduce((a, b) => a+b)/ arr.length;
+
+3. Randomly sort sort arr
+const sortRandom = arr => arr.sort(() => 0.5 - Math.random())
+
+4. Get arr intersections
+const intersection = (arr, val) => arr.filter(v => val.includes(v));
+
+5. Multi dimentional arr to one dimention
+const deepFlattenArr = arr => [].concat(...arr.map(v => (Array.isArray(v) ? deepFlattenArr(v) : v)));
+
+3. Check if obj is empty
+const isObjEmpty = obj => JSON.stringify(obj) === "{}"
+
+4. Reverse string characters
+const reverseStr = str => str.split('').reverse().join('')
+
+5. Capitalize first letter in string
+const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
+
+6. Check num is even or odd
+const isEven = num => num%2 === 0
+
+7. Get random boolean value
+const getRandomBoolean = () => Math.random() >= 0.5
+
