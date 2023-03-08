@@ -28,3 +28,5 @@ const isEven = num => num%2 === 0
 7. Get random boolean value
 const getRandomBoolean = () => Math.random() >= 0.5
 
+8. Get all the keys from list of dict, and put into a list
+const csvhead = Object.keys(listOfDict).map(function(x){ return x.charAt(0).toUpperCase() + x.slice(1); }).toString() + '\n';
